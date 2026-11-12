@@ -13,11 +13,14 @@ export default function Sidebar({ user, page, onNavigate, onLogout }) {
       <button key={id} className={page === id ? 'active' : ''} onClick={() => onNavigate(id)}>
         <Icon />{label}
       </button>
-    )}</nav>
+      )}
+    </nav>
+
     <div className="profile">
       <div className="avatar">{user.name[0].toUpperCase()}</div>
       <span><b>{user.name}</b><small>{user.organization}</small></span>
-      <button className="logout" onClick={onLogout} title="Log out"><LogOut /></button>
+      <button className="logout" onClick={onLogout} title="Log out"> <LogOut /> </button>
     </div>
+
   </aside>;
 }

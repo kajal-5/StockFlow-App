@@ -6,7 +6,7 @@ The project is split into two folders:
 - `frontend/src/components/` — Shared sidebar, brand, product form, and product table.
 - `frontend/src/lib/api.js` — Frontend helper for calling the backend.
 - `frontend/` — React, JavaScript, Vite, and Tailwind CSS app setup.
-- `backend/` — Express API, authentication, and SQLite database (`stockflow.db` is created automatically).
+- `backend/` — Express API, authentication, and SQLite database .
 
 Both run through the backend on the same port (`3001` by default; set `PORT` to change it).
 
