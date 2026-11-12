@@ -3,6 +3,7 @@ import Brand from '../components/Brand.jsx';
 
 export default function AuthPage({ onLogin, error }) {
   const [mode, setMode] = useState('login');
+  
   async function submit(event) {
     event.preventDefault();
     await onLogin(mode, Object.fromEntries(new FormData(event.currentTarget)));
